@@ -1,12 +1,81 @@
 body {
-    background-color: ;
+    background-color: #990909;
 }
+
+/* header */
 .header {
     text-align: center;
+    margin-top: 10px;
 }
-img {
-    max-width: 100%;
-}
+
+/* end header*/
+
+/* content */
+
 .black {
+    background-color: black;
     text-align: center;
+    padding-top: 20px;
+    margin-top: 15px;
 }
+
+.link {
+    background-color: #7D0909; 
+}
+
+.news {
+    background-color: #E3DDDD;
+}
+
+.news p {
+    color: black;
+}
+
+/* end content */
+
+/* text */
+.text{
+    text-align: center;
+    color: white;
+}
+
+p {
+    text-align: left;
+    color: white;
+}
+
+a {
+    color: #E95B11;
+}
+
+h3 {
+    background-color: lightgrey;
+    text-align: center;
+    margin-top: 5px;   
+}
+
+/* end text*/
+
+/* for table */
+
+caption {
+    caption-side: bottom;
+    background-color: #E95B11;
+    color:white;
+    padding: 5px 0;
+}
+td {
+    vertical-align: top;
+}
+
+/* end for table */
+
+/* images */
+
+
+/* end images */
+
+
+
+
+
