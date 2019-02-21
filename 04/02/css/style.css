@@ -1,0 +1,42 @@
+body {
+    font: 100%/1.5 Arial, Hevletica, san-serif;
+    margin: 0;
+}
+
+.direction {
+    background: #1D1B1C;  
+}
+
+.page__direction {
+    height: 457px;
+}
+
+.direction-title{
+    text-align: center;
+    margin-top: 108px;
+}
+
+.direction-title__item {  
+    display: inline-block;  
+    width: 80px;
+    height: 80px;
+    background: #FFAD00;
+    border-radius: 20px 0px 20px 0px;
+}
+
+.direction-title__img {
+    margin-top: 23px;
+}
+
+.direction-title__caprion {
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 37px;
+    font-weight: 100;
+}
+
+.direction-title__text {
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 9px;
+}
