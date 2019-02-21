@@ -1,0 +1,53 @@
+body {
+    font: 100%/1.5 Arial, Hevletica, san-serif;
+    margin: 0;
+}
+
+.social {
+    background: #121116;   
+}
+
+.page__social {
+    height: 419px;    
+}
+
+.social__content {
+    text-align: center;
+    margin-top: 119px;
+}
+
+.social__logotype {
+    margin-bottom: 19px;
+}
+
+.social__caption {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 19px;
+    color: #fff;
+    margin-bottom: 13px;   
+}
+
+hr {
+    width: 20%;
+    border-width: .5px;
+    margin-bottom: 20px;
+}
+
+.social__icons {
+    margin-bottom: 74px;
+}
+
+.social__icons a {
+    padding: 0 13px;
+}
+
+.social__copyright {
+    color: #fff;
+}
+
+.social__link {
+    text-decoration: none;
+    color: #00C8FB;
+}
+
