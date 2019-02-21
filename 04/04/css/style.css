@@ -1,0 +1,37 @@
+body {
+    font: 100%/1.5 Arial, Hevletica, san-serif;
+    margin: 0;
+}
+
+.page__categories {
+    margin-top: 130px;
+}
+
+img {
+    width: 17%;
+}
+
+hr {
+    width: 27%;
+    height: 2px;
+    color: #00E1FF; 
+    background-color: #00E1FF;
+    border: none;
+    margin-bottom: 15px; 
+}
+
+.categories__inner {
+    text-align: center;
+}
+
+.categories__img {
+    margin-bottom: 27px;
+}
+
+.categories__caption {
+    text-transform: uppercase;
+}
+
+.categories__text {
+    font-size: 13px;
+}
