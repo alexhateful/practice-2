@@ -1,0 +1,252 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: 100%/1.5 Arial, Hevletica, san-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.page__header {
+    margin-top: 92px;
+}
+
+.title {
+    font-family: Asap;
+    font-size: 30px;
+    line-height: 40px;
+    /* Text style for "Have any" */
+    color: #202020;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.title__slogan {
+    color: #2ec06c;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #666;
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 51px;
+}
+
+.messages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+
+.messages__form {
+    height: 140px;
+    width: 140px;
+    margin-bottom: 19px;
+}
+
+.social {
+    border-radius: 5px;
+    height: 140px;
+    position: relative;
+}
+
+.fa-facebook-f {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-instagram {
+    color: #517fa4;
+}
+
+.fa-dribbble {
+    color: #ff0084;
+}
+
+.social__icon {
+    font-size: 52px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social:after {
+    position: absolute;
+    content: '';
+    background: rgba(59, 89, 152);
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .2s;
+}
+
+.social--facebook {
+    border: 1px solid #3b5998;
+}
+
+.social--facebook:after {
+    background: #3b5998;
+}
+
+.social--twitter {
+    border: 1px solid #00aced;
+}
+
+.social--twitter:after {
+    background: #00aced;
+}
+
+.social--instagram {
+    border: 1px solid #517fa4;
+}
+
+.social--instagram:after {
+    background: #517fa4;
+}
+
+.social--dribbble {
+    border: 1px solid #ff0084;
+}
+
+.social--dribbble:after {
+    background: #ff0084;
+}
+
+.social__icon--hover {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s;
+}
+
+.social:hover:after {
+    opacity: 1;
+}
+
+.social:hover .social__icon--hover {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.social__instagram {
+    border: 1px solid rgb(34, 124, 94);
+}
+
+.post__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding-right: 3px;
+}
+
+input,
+textarea {
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    padding: 15px;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+    outline: none;
+    border: 1px solid #2ec06c;
+    border-radius: 5px;
+}
+
+#firstname {
+    padding-left: 20px;
+}
+
+.post__text {
+    position: relative;
+    grid-column: 1 / 3;
+}
+
+.post__text textarea {
+    width: 100%;
+    height: 100%;
+    line-height: 25px;
+    padding: 16px;
+}
+
+.post__submit,
+.post__icon {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -52%);
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.post__submit {
+    border-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #2ec06c;
+    width: 40px;
+    height: 158px;
+}
+
+.post__icon {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-170%, -9%);
+    height: 97%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.post__submit:hover {
+    background-color: #37d679;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #666;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    padding: 6px;
+}
+
+#comment::placeholder {
+    padding: 8px;
+    line-height: 0;
+}
