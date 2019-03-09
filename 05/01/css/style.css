@@ -29,6 +29,7 @@ body {
 .employees {
     position: relative;
     display: flex;
+    margin-bottom: 20px;
 }
 
 .employees__img {
@@ -52,7 +53,7 @@ body {
     background: #18B6DD;
     transition: .3s;
 }
-
+/*
 .employees__icon {
    font-size: 34px;
    padding: 10px;
@@ -67,6 +68,34 @@ body {
 .employees__link {
     text-decoration: none;
     color: white;
+}
+*/
+
+.social__employees {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.employees__link {
+    text-decoration: none;
+}
+
+.employees__icon--instagram {
+    background: #5ecce7;
+    padding: 10px;
+}
+
+.employees__icon--facebook {
+    background: #5ecce7;
+    padding: 8px 14px;
+
+}
+
+.employees__icon--google {
+    background: #5ecce7;
+    padding: 8px 8px;   
 }
 
 .info__subtitle {
