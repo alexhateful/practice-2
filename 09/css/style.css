@@ -56,31 +56,77 @@ body {
 }
 
 .messages__form {
-    height: 140px;
-    width: 140px;
-    margin-bottom: 19px;
+    padding: 1px;
 }
 
 .social {
     border-radius: 5px;
-    height: 140px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 68px;
     position: relative;
+    cursor: pointer;
 }
 
-.fa-facebook-f {
+.social::after {
+    position: absolute;
+    content: '';
+    background: currentColor;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.social--facebook {
+    border-color:  #3b5998;
     color: #3b5998;
 }
 
-.fa-twitter {
-    color: #00aced;
+.social--twitter {
+    border-color:  #00aced;
+    color:  #00aced;
+    margin-bottom: 19px;
 }
 
-.fa-instagram {
-    color: #517fa4;
+.social--instagram{
+    border-color:  #517fa4;
+    color:  #517fa4;
 }
 
-.fa-dribbble {
+.social--dribbble {
+    border-color: #ff0084;
     color: #ff0084;
+}
+
+.social__link {
+    text-decoration: none;
+    color: inherit;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 52px;
+    z-index: 2;
+}
+
+.social:hover::after {
+    opacity: 1;
+}
+
+.social:hover a{
+    color: #fff;
+}
+/*
+.social {
+    border-radius: 5px;
+    height: 140px;
+    position: relative;
 }
 
 .social__icon {
@@ -91,7 +137,76 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.social:after {
+.social--facebook {
+    border: 1px solid #3b5998;
+    border-radius: 5px;
+    position: relative;
+    color: #3b5998;
+    font-size: 53px;
+    max-width: 140px;
+    max-height: 140px;
+    transition: .3s;
+}
+
+.social--facebook:hover {
+    color: white;
+    background: #3b5998;
+    cursor: pointer;
+}
+
+.social--twitter {
+    border: 1px solid #00aced;
+    border-radius: 5px;
+    position: relative;
+    font-size: 53px;
+    color: #00aced;
+    max-width: 140px;
+    max-height: 140px;
+    transition: .3s;
+}
+
+.social--twitter:hover {
+    color: white;
+    background: #00aced;
+    cursor: pointer;
+}
+
+.social--instagram {
+    border: 1px solid #517fa4;
+    border-radius: 5px;
+    position: relative;
+    font-size: 53px;
+    color: #517fa4;
+    max-width: 140px;
+    max-height: 140px;
+    transition: .3s;
+}
+
+.social--instagram:hover {
+    color: white;
+    background: #517fa4;
+    cursor: pointer;
+}
+
+.social--dribbble {
+    border: 1px solid #ff0084;
+    border-radius: 5px;
+    position: relative;
+    font-size: 53px;
+    color: #ff0084;
+    max-width: 140px;
+    max-height: 140px;
+    transition: .3s;
+}
+
+.social--dribbble:hover {
+    color: white;
+    background: #ff0084;
+    cursor: pointer;
+}
+*/
+
+/*.social:after {
     position: absolute;
     content: '';
     background: rgba(59, 89, 152);
@@ -157,13 +272,14 @@ body {
 
 .social__instagram {
     border: 1px solid rgb(34, 124, 94);
-}
+}*/
 
 .post__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    padding-right: 3px;
+    padding-right: 4px;
+    padding-left: 2px;
 }
 
 input,
@@ -171,6 +287,8 @@ textarea {
     border-radius: 5px;
     border: 1px solid #bababa;
     padding: 15px;
+    font-family: Asap;
+    font-style: italic;
     color: #666666;
     font-size: 16px;
     font-weight: 400;
@@ -179,14 +297,14 @@ textarea {
 input:focus,
 input:active,
 textarea:focus,
-textarea:active {
-    outline: none;
+textarea:active {   
     border: 1px solid #2ec06c;
-    border-radius: 5px;
+    border-radius: 4px;
+    outline: none;
 }
 
 #firstname {
-    padding-left: 20px;
+    padding-left: 18px;
 }
 
 .post__text {
@@ -198,7 +316,10 @@ textarea:active {
     width: 100%;
     height: 100%;
     line-height: 25px;
-    padding: 16px;
+    padding: 17px 0px 16px 13px;
+    /* letter-spacing: 0.004px; */
+    margin-top: -1px;
+    margin-left: 2px;
 }
 
 .post__submit,
@@ -206,19 +327,19 @@ textarea:active {
     position: absolute;
     top: 50%;
     left: 100%;
-    transform: translate(-100%, -52%);
+    transform: translate(-98%, -52%);
     height: 100%;
     color: #fff;
     cursor: pointer;
 }
 
 .post__submit {
+    width: 40px;
+    height: 159px;
     border-radius: 0px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: #2ec06c;
-    width: 40px;
-    height: 158px;
 }
 
 .post__icon {
@@ -226,7 +347,7 @@ textarea:active {
     position: absolute;
     top: 50%;
     left: 100%;
-    transform: translate(-170%, -9%);
+    transform: translate(-170%, -12%);
     height: 97%;
     color: #fff;
     cursor: pointer;
