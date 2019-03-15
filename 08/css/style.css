@@ -1,0 +1,118 @@
+body {
+    font: 100%/1.5 'Montserrat', san-serif;
+    margin: 0;
+}
+
+.about__header {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__main-title {
+    color: #898f99;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 4.3px;
+    padding: 133px 0px 0px 25px;
+    margin: 0;
+    margin-bottom: -30px;
+}
+
+.about__title {
+    color: #0ec8cb;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 4.25px;
+    margin-bottom: -2px;
+}
+
+.about__subtitle {
+    color: #999;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 1.099px;
+    margin-bottom: 99px;
+}
+
+.promo {
+    text-align: center;
+}
+
+.promo__panel {
+    background-color: #f7f7f7;
+    border: 1px solid #ececec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.icon {
+    color: #1b1b1b;
+    padding-top: 54px;
+    padding-bottom: 16px;
+}
+
+.icon-1 {
+    font-size: 66px;
+    padding-bottom: 29px;
+}
+
+.icon-2 {
+    font-size: 65px;
+}
+
+.icon-3 {
+    font-size: 48px;
+    padding-top: 63px;
+    padding-bottom: 38px;
+}
+
+.icon-4 {
+    font-size: 51px;
+    padding-top: 61px;
+    padding-bottom: 37px;
+}
+
+.promo__title {
+    color: #1b1b1b;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.promo__text {
+    color: #777;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 0px 19px;
+    margin-bottom: 90px;
+}
+
+.promo__text--bottom {
+    margin-bottom: 79px;
+}
+
+.promo__panel:hover {
+    background-color: #0ec8cb;
+    transition: .3s ease-in;
+}
+
+.promo__panel:hover .icon {
+    color: #fff;
+}
+
+.promo__panel:hover .promo__title {
+    color: #fff;
+}
+
+.promo__panel:hover .promo__text {
+    color: #fff;
+}
