@@ -1,6 +1,9 @@
 body {
     font: 100%/1.5 'Montserrat', san-serif;
     margin: 0;
+    /* background: url(../namaste_green.jpg) top no-repeat; */
+    /* background-size: 100%; */
+    /* object-fit: fill; */
 }
 
 .about__header {
@@ -103,6 +106,7 @@ body {
 .promo__panel:hover {
     background-color: #0ec8cb;
     transition: .3s ease-in;
+    cursor: pointer;
 }
 
 .promo__panel:hover .icon {
