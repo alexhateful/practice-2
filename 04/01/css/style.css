@@ -37,10 +37,9 @@ body {
     text-transform: uppercase;    
 }
 
-.nav__link:hover {
-    color: #033A73;
+.nav__link:focus {
+    color: #033A73;     
 }
-
 /* end navigation menu */
 
 /* main content */
@@ -49,8 +48,8 @@ body {
     text-transform: uppercase;
 }
 
-.about-brand__information {
-    margin-top: 120px;
+.about-brand__logotype {
+    margin-top: 130px;
 }
 
 .application__image {
@@ -63,7 +62,6 @@ body {
     font-size: 24px;
     color: #12376b;
 }
-
 /* end main content */
 
 /* footer content */
@@ -104,5 +102,4 @@ body {
     border: 5px solid #fff;
     width: 14%;
 }
-
 /* footer content */
